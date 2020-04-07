@@ -1,0 +1,27 @@
+{
+  "name": "dakujem/remapkeys",
+  "description": "Remap array keys.",
+  "license": "Unlicense",
+  "authors": [
+    {
+      "name": "Andrej Rypák",
+      "email": "xrypak@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=7"
+  },
+  "require-dev": {
+    "php": ">=7.2",
+    "phpunit/phpunit": "^8 || ^9.1"
+  },
+  "autoload": {
+    "files": [
+      "src/map.php",
+      "src/remap.php"
+    ]
+  },
+  "scripts": {
+    "test": "phpunit tests"
+  }
+}

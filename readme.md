@@ -1,7 +1,10 @@
 
 # Remap Keys
 
+[![Tests](https://github.com/dakujem/remapkeys/actions/workflows/php-test.yml/badge.svg)](https://github.com/dakujem/remapkeys/actions/workflows/php-test.yml)
+<!--
 [![Build Status](https://travis-ci.org/dakujem/remapkeys.svg?branch=master)](https://travis-ci.org/dakujem/remapkeys)
+-->
 
 > 💿 `composer require dakujem/remapkeys`
 

@@ -2,9 +2,7 @@
 # Remap Keys
 
 [![Tests](https://github.com/dakujem/remapkeys/actions/workflows/php-test.yml/badge.svg)](https://github.com/dakujem/remapkeys/actions/workflows/php-test.yml)
-<!--
-[![Build Status](https://travis-ci.org/dakujem/remapkeys.svg?branch=master)](https://travis-ci.org/dakujem/remapkeys)
--->
+[![Coverage Status](https://coveralls.io/repos/github/dakujem/remapkeys/badge.svg?branch=feat/coveralls)](https://coveralls.io/github/dakujem/remapkeys?branch=feat/coveralls)
 
 > 💿 `composer require dakujem/remapkeys`
 

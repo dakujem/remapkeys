@@ -6,7 +6,6 @@
 
 > 💿 `composer require dakujem/remapkeys`
 
-### Functions for common array operations.
 
 This package adds a pair of functions similar to `array_map`
 that are commonly used when working with arrays:
@@ -14,6 +13,39 @@ that are commonly used when working with arrays:
   - like `array_map`, but allows to specify/map indexes of the result
 - `array_map_keys`
   - like `array_map`, but passes indexes to the iteratee function and preserves indexes in the result
+
+
+## Toru (alternative)
+
+Both functions provided by this package can be replaced by utils provided by [Toru 取る (`dakujem/toru`)](https://github.com/dakujem/toru),
+which also offers tools to work with generic `iterable` type.
+
+The `array_remap` can be replaced by less restrictive `Itera::unfold`:
+```php
+// Original `array_remap` function call:
+array_remap($function, $input);
+
+// Replaced by `Itera` class method call:
+Itera::unfold($input, $function);
+```
+
+Pros:
+- also enable to one value into multiple
+- enable including branching logic (`if`) inside the mapper
+- may be more memory efficient, especially for large arrays
+
+
+The `array_map_keys` can be replaced by `Itera::map` or `Itera::apply`, because all callables in Toru receive keys along with values:
+```php
+// Original `array_map_keys` function call:
+array_map_keys($function, $input);
+
+// Replaced by `Itera` class method call:
+Itera::map($input, $function);
+```
+
+Pros:
+- may be more memory efficient, especially for large arrays
 
 
 ## `array_remap`
